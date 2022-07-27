@@ -64,4 +64,4 @@ elif rememberance == 'N' or rememberance == 'n':
 else:
     print('Please insert the correct value')
 
-# ensure there's a mariadb installation and there's a user named tecumseh and he's at localhost and has privileges to the database Personal
+# ensure there's a mariadb installation and there's a user mentioned above and he's at localhost and has privileges to the database mentioned
