@@ -5,15 +5,15 @@ from decouple import config
 import locale
 config.encoding = locale.getpreferredencoding(False)
 
-dreams = {'1':'Positive Dream','2':'Nostalgic Dream','3':'Nightmare','4':'Awkward Dream','5':'Erotic Dream'}
+dreams = {'1':'Positive Dream','2':'Nostalgic Dream','3':'Nightmare','4':'Awkward Dream','5':'Erotic Dream','6':'Normal Dream'}
 
 rememberance = input('Can you remember yesterday\'s dream? Type Y for Yes and N for No: ').strip()
 
 if rememberance == 'Y' or rememberance == 'y':
     the_category = ''
-    category = input(' 1) Positive Dream \n 2) Nostalgic Dream \n 3) Nightmare \n 4) Awkward Dream \n 5) Erotic Dream \n What type of dream did you have?: ').strip()
+    category = input(' 1) Positive Dream \n 2) Nostalgic Dream \n 3) Nightmare \n 4) Awkward Dream \n 5) Erotic Dream \n 6) Normal Dream \n What type of dream did you have?: ').strip()
     category = int(category)
-    if category > 0 and category <= 5:
+    if category > 0 and category <= 6:
         the_category = dreams[str(category)]
     else:
         print('Please choose any option between 1 and 5')
